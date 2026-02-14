@@ -1,0 +1,39 @@
+
+#q-table-wrapper {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.input {
+    border: 1px solid #888;
+    border-radius: 5px;
+    line-height: 26px;
+    padding: 0 10px;
+    cursor: text;
+}
+
+.search-result-description-wrapper {
+    margin: 10px;
+}
+
+.header {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.row-wrapper {
+}
+
+.row-wrapper:nth-child(even){
+    background-color: #f8f8f8;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    padding: 10px;
+}

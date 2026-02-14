@@ -1,0 +1,30 @@
+<div id="q-table-wrapper">
+
+
+  <div class="search-wrapper">
+    <input type="text" class="input search-input" placeholder="Search..." [(ngModel)]="q" (keyup)="search()" />
+
+    <div *ngIf="q" class="search-result-description-wrapper">
+      {{searchResultCount}} search results found for '{{q}}'
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell" *ngFor="let header of headers">
+      <div class="header">
+        {{header}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row-wrapper" *ngFor="let row of rows">
+    <div class="row" *ngIf="row.visible">
+      <div *ngFor="let cell of row.cells" class="cell">
+        {{ cell.value }}
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
